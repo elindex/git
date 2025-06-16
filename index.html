@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Indicamos que vamos a usar codificación UTF-8 para que funcionen bien los acentos, la ñ y otros caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Esto hace que el sitio se vea bien en pantallas de celulares, tablets y todo tipo de dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Este es el título que aparece en la pestaña del navegador -->
+    <title>Landing Page</title>
+
+    <!-- Aquí estamos conectando el archivo de estilos externo para que el sitio tenga buen diseño -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Esta es la cabecera del sitio. Aquí saludamos al usuario y lo invitamos a ver más información -->
+    <header>
+        <div class="container">
+            <!-- Título principal que capta la atención del visitante -->
+            <h1>¡Bienvenido a nuestra página!</h1>
+
+            <!-- Una pequeña frase que explica de qué se trata el sitio -->
+            <p>Sitio web de muestra para una empresa ficticia</p>
+
+            <!-- Este botón lleva al usuario a la sección de características, más abajo en la página -->
+            <a href="#features" class="btn">Ver características</a>
+        </div>
+    </header>
+
+    <!-- En esta sección mostramos los beneficios principales de lo que ofrecemos -->
+    <section id="features">
+        <div class="container">
+            <h2>Características principales</h2>
+
+            <!-- Característica 1: Le decimos al usuario que nuestro sistema es fácil de usar -->
+            <div class="feature">
+                <h3>Facilidad de uso</h3>
+                <p>Nuestra plataforma es fácil de usar y muy intuitiva.</p>
+            </div>
+
+            <!-- Característica 2: Adaptabilidad a cualquier dispositivo -->
+            <div class="feature">
+                <h3>Diseño responsivo</h3>
+                <p>Funciona perfectamente en cualquier dispositivo.</p>
+            </div>
+
+            <!-- Característica 3: Atención disponible todo el día -->
+            <div class="feature">
+                <h3>Soporte 24/7</h3>
+                <p>Estamos disponibles todo el día para ayudarte.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aquí compartimos lo que opinan algunas personas que han usado nuestro servicio -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonios</h2>
+
+            <!-- Un ejemplo de lo que dice un cliente contento -->
+            <div class="testimonial">
+                <p>"¡Increíble servicio! Me ayudaron rápidamente y el producto es excelente."</p>
+                <cite>- Cliente feliz</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esta es la sección de contacto. Si alguien quiere escribirnos, aquí puede hacerlo -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <!-- Formulario para que el usuario nos deje su nombre, correo y un mensaje -->
+            <form action="#" method="post">
+                <!-- Campo para que el usuario escriba su nombre -->
+                <input type="text" name="name" placeholder="Nombre" required>
+
+                <!-- Aquí va el correo electrónico del usuario -->
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+
+                <!-- Espacio para escribir el mensaje que quiere enviarnos -->
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página. Cerramos el sitio con los derechos reservados y el nombre de la empresa -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
