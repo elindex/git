@@ -1,36 +1,125 @@
+/* Estilos generales para todo el sitio */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #a18cd1, #fbc2eb);
-  color: #333;
-  padding: 20px;
+    /* Tipografía simple y fácil de leer */
+    font-family: Arial, sans-serif;
+
+    /* Quitamos los márgenes y rellenos por defecto del navegador */
+    margin: 0;
+    padding: 0;
 }
 
+/* Contenedor principal que centra el contenido y le da espacio lateral */
+.container {
+    width: 80%; /* Ocupa el 80% del ancho de la ventana */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* Estilos para la cabecera (header) de la página */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco para buen contraste */
+    text-align: center; /* Todo el texto centrado */
+    padding: 100px 0; /* Mucho espacio arriba y abajo para resaltar la cabecera */
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+/* Tamaño del título principal dentro del header */
+header h1 {
+    font-size: 2.5em; /* Hacemos el título grande y llamativo */
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+/* Estilos del botón principal */
+.btn {
+    display: inline-block; /* Se comporta como bloque pero en línea */
+    background-color: #007bff; /* Azul brillante */
+    color: #fff; /* Texto blanco para que se lea bien */
+    padding: 10px 20px; /* Espacio interior para que el botón no se vea apretado */
+    text-decoration: none; /* Quitamos el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para que se vea moderno */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el mouse */
 }
 
-main {
-  margin-top: 30px;
-  background-color: rgba(255,255,255,0.9);
-  padding: 20px;
-  border-radius: 10px;
+/* Efecto cuando el mouse pasa por encima del botón */
+.btn:hover {
+    background-color: #0056b3; /* Un azul más oscuro cuando el usuario pasa el mouse */
+}
+
+/* Estilos generales para las secciones del sitio */
+section {
+    padding: 50px 0; /* Espaciado vertical para que no se vea todo amontonado */
+}
+
+/* Títulos principales dentro de cada sección */
+h2 {
+    text-align: center; /* Centramos el título para una presentación más limpia */
+}
+
+/* Estilo para cada bloque de característica */
+.feature {
+    text-align: center; /* Centramos el contenido de cada característica */
+    margin-bottom: 30px; /* Espacio inferior entre características */
+}
+
+/* Subtítulo dentro de cada característica */
+.feature h3 {
+    font-size: 1.5em; /* Un poco más grande que el texto normal */
+}
+
+/* Estilo del bloque de testimonios */
+.testimonial {
+    background-color: #f9f9f9; /* Fondo claro para destacar del resto */
+    padding: 20px; /* Espacio interior cómodo */
+    border-radius: 5px; /* Bordes suaves */
+    margin-bottom: 30px; /* Espacio entre testimonios */
+}
+
+/* Texto del testimonio */
+.testimonial p {
+    font-style: italic; /* Cursiva para dar énfasis, como una cita */
+}
+
+/* Nombre del autor del testimonio */
+.testimonial cite {
+    font-weight: bold; /* Negrita para resaltar quién lo dijo */
+}
+
+/* Estilo general del formulario de contacto */
+form {
+    max-width: 600px; /* No queremos que el formulario sea muy ancho */
+    margin: 0 auto; /* Centramos el formulario horizontalmente */
+}
+
+/* Campos de texto, correo y área de mensaje */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    padding: 10px; /* Espacio interior para que el texto no quede pegado al borde */
+    margin-bottom: 20px; /* Espacio entre campos */
+    border-radius: 5px; /* Bordes suaves */
+    border: 1px solid #ccc; /* Un borde gris clarito */
+}
+
+/* Botón para enviar el formulario */
+button[type="submit"] {
+    background-color: #007bff; /* Mismo azul que los demás botones */
+    color: #fff; /* Texto blanco para contraste */
+    border: none; /* Quitamos el borde predeterminado */
+    padding: 10px 20px; /* Espacio interior */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Animación suave al hacer hover */
+}
+
+/* Efecto hover del botón de enviar */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro para destacar */
+    color: #fff; /* Texto blanco para buena visibilidad */
+    text-align: center; /* Centrado del texto */
+    padding: 20px 0; /* Espacio arriba y abajo */
 }
